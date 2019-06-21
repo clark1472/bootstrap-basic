@@ -222,6 +222,7 @@ footer {
   margin-bottom: 20px;
   font-weight: bold; 
 } 
+/* ================NEED TO REMOVE FLOATS FROM BOOTSTRAP============= I HAVE 7 FLOATS =========================== */
 
  /* ============= contact specifics ================== */
 
@@ -244,11 +245,11 @@ footer {
     background-color: #4aaaa5;
    } 
 
-   .threeLinks {
+   a.nav-link {
     padding-left: 130px; 
   } 
 
-  #contact {
+  #navContact {
   border-right: 1px solid grey;   
  } 
 
