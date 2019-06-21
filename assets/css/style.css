@@ -119,90 +119,108 @@
     clear: both;
   }  
 
-  /* ================== sidebar ====================== */
+  /* =========== card/sidebar/panel/ ================ */
+ .containerTwo {
+  width: 220px;
+  /* margin: 0;  */
+  
 
-.sidebar {
-    background-color: white;
-    padding: 20px;
-    width: 100%;
-    max-width: 260px;
-    float: left; 
-    border: 1px solid lightgrey;
-    margin: 130px 20px 50px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 270px;
+  float: left; 
+  /* border: 1px solid lightgrey; */
+  margin: 130px 20px 50px;
 } 
 
 .clearfix {
-    overflow: auto;
-  }
+  overflow: auto;
+}
 
-h3, h2, .sidebar {
-    border-bottom: 1px solid grey;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    display: inline-block;
+h3, .card{
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+   
+}
+
+h2 {
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0 0 10px; 
+}
+
+.containerTwo {
+padding: 10px 10px 10px 20px;
+margin: 130px 0 0 30px;
 }
 
 .icons {
-    width: 62px;
-    height: 62px;
-    display: inline-block;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 10px;
   }
+
+#stack {
+ padding-right: 10px;
+}
 
 
 footer {
-clear: both;
-padding: 30px 0;
-color: white;
-background: grey;
-border-top: 8px solid #4aaaa5;
-text-align: center;
-margin: auto;
+  clear: both;
+  padding: 30px 0;
+  color: white;
+  background: grey;
+  border-top: 8px solid #4aaaa5;
+  text-align: center;
+  margin: auto;
 }
 
   /* ========== portfolio items ============*/
      /* for about me photo */
 #portContainer {
-    margin: 130px 0 40px 50px;
-    float: left;
-    padding: 30px;
-    width: 100%;
-    max-width: 650px;
-    background-color: white;
+  margin: 130px 0 40px 50px;
+  float: left;
+  padding: 30px;
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
 
 }
 
 .project {
-width: 274px;
-height: auto;
-overflow: auto;
-position: relative;
-float: left;
-margin: 20px 0 25px;
+  width: 274px;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  float: left;
+  margin: 20px 0 25px;
 }
 
 .project:nth-child(even) {
-margin-right: 40px;
+  margin-right: 40px;
 }
 
 .project img {
-width: 100%;
-border: 0 none;
-/* opacity: .8; */
+  width: 100%;
+  border: 0 none;
 }  
 
 .project h3{
-border-bottom: 0;
-background-color: #4aaaa5;
-color: white;
-text-align: center;
-position: absolute;
-bottom: 20px;
-padding: 15px;
-width: 100%;
-line-height: 30px;
-margin-bottom: 20px;
-font-weight: bold; 
+  border-bottom: 0;
+  background-color: #4aaaa5;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-weight: bold; 
 } 
 
  /* ============= contact specifics ================== */
