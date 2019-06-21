@@ -55,10 +55,8 @@
     /* weard one trying to remember: 0 top, 0 left and right, 30px bottom */
     margin: 0 0 30px;
     padding: 0;
-    /* z-index must be used with position property together*/
+    /* z-index must be used to keep on top of content scrolling*/
     z-index: 99;
-    /* position fixed keeps navbar at top of page through scrolling */
-    position: fixed;
     color: white;
     background: white;
     /* this help navbar divide for two rows */
@@ -68,37 +66,31 @@
   #myName {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    float: left; /*float clear taken care of in .container - yes*/
     width: 300px;
     height: 90px;
     font-weight: bold;
     text-align: center;
     color: white;
-    line-height: 90px;
+    line-height: 80px;
     background: #4aaaa5;
     margin: 0 0 0 50px;
    }
 
-   nav {
-    /* float and display inline-block do not work together-seperate */
-    float: right;
-   }
-  
-   nav a { 
+   .nav-link { 
+    padding: 0 0 0 15px;
+    margin: 0 0 0 15px;
     background: white;
-    color: darkgray;
-    margin-left: 15px;
-    padding-left: 15px;
-    display: inline-block;
+    color: grey;
     border-left: 1px solid grey;
    }
   
    /* wow so much power is child element */
-  nav a:last-child {
+  #contact {
     padding-right: 15px;
   }
 
   
+
 
   /* ============== About Me specifics =============== */
 
@@ -130,7 +122,6 @@
   /* ================== sidebar ====================== */
 
 .sidebar {
-    /* #connection { */
     background-color: white;
     padding: 20px;
     width: 100%;
@@ -221,3 +212,39 @@ font-weight: bold;
     padding: 30px;
     float: left;
   }
+
+/* ======= @ media breakpoints =========================  */
+
+/* ==== this is the navbar ====== */
+/* 
+ @media only screen and (max-width: 576px) { 
+  #myName {
+    width: 576px;
+    margin: 0;
+    clear: both;
+    text-align: center;
+    background-color: #4aaaa5;
+   } 
+
+   .threeLinks {
+    padding-left: 130px; 
+  } 
+
+  #contact {
+  border-right: 1px solid grey;   
+ } 
+
+ .mainSection {
+   width: 540px;
+    padding-top: 140px;
+    need background-color to test things
+    background-color: red;  
+ }
+
+ .container {
+  margin: 20px 10px;
+  padding-top: 140px;
+    need background-color to test things
+    background-color: blue;  
+  }
+ } */

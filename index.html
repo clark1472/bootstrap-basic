@@ -1,73 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!--css-->
-<link rel="stylesheet" media="screen" href="assets/css/style.css">
+    <!--css-->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css">
     <title>About Me</title>
 </head>
 
 <body>
     <!--============= Navbar header ==============-->
-    <header>
-        <div class="navbar navbar-light bg-white">
-            <a href="index.html" id="myName">Christine Clark</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a> 
-            </nav>
-        </div>  <!--navbar -->
-    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" id="myName">Christine Clark</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact" href="contact.html">Contact</a>
+            </li>
+            <!--nav 3 href -->
+        </ul>
+        <!--col whole navbar -->
+    </nav>
+    <!--navbar -->
+
 
     <!-- ============= container ======================-->
     <div class="container" id="aboutContainer">
-    <section class="mainSection">
-        <h1 >About Me</h1>
+        <div class="row mainSection">
+            <div class="col-sm-12">
+                <h1>About Me</h1>
+                <div class="col-sm-12">
+                    <img src="assets/images/christen school.jpg" alt="my photo" id="about-image" />
+                    <div class="col-sm-12">
+                        <p>Detailed oriented person that thrives on handling many tasks. Let’s keep all the balls moving
+                            to
+                            completion. I am a cooperative team player who is always focused on the goal. I am flexible
+                            and easy
+                            going, most things don’t rattle me. I like to think outside the box. I will find a different
+                            way to use
+                            a tool than it was made for.</p>
+                        <div class="col-sm-12">
+                            <p>It confuses some people, excites others. I like making charts, lists and word documents
+                                to see a
+                                progression of getting things done. I am creative with a touch of independence. Give me
+                                a chance to be
+                                inventive and I will surprise you.</p>
+                        </div> <!-- col 2p -->
+                    </div> <!-- col 1p-->
+                </div> <!-- col about-image-->
+            </div> <!-- col abtMe text-->
+        </div> <!-- row mainSection-->
+    </div> <!-- container -->
 
-        <img src="assets/images/christen school.jpg" alt="my photo" id="about-image"/>
-
-        <p>Detailed oriented person that thrives on handling many tasks. Let’s keep all the balls moving to completion. I am a cooperative team player who is always focused on the goal. I am flexible and easy going, most things don’t rattle me. I like to think outside the box. I will find a different way to use a tool than it was made for.</p>
-        
-        <p>It confuses some people, excites others. I like making charts, lists and word documents to see a progression of getting things done. I am creative with a touch of independence. Give me a chance to be inventive and I will surprise you.</p>
-
-    </section>  <!-- section -->
-    </div>  <!-- container -->
-
- <!--============ sidebar icons =============-->
- <section class="sidebar">
-    <!-- <div id="connection"> -->
+    <!--============ sidebar icons =============-->
+    <section class="sidebar">
+        <!-- <div id="connection"> -->
         <h2>Connect with Me</h2>
 
         <img src="assets/images/iconfinder_github_square_black_107109.png" class="icons" alt="GitHub">
         <img src="assets/images/iconfinder_linkedin_square_color_107091.png" class="icons" alt="LinkedIn">
         <img src="assets/images/iconfinder_stackoverflow_273179.png" class="icons" alt="Stack Overflow">
-    
-    <!-- </div>  connection -->
-</section>  <!--sidebar-->
 
-    
-<!--========== footer ============================-->
+        <!-- </div>  connection -->
+    </section>
+    <!--sidebar-->
+
+
+    <!--========== footer ============================-->
     <footer>
         &copy Copyright 2019 Christen Clark
     </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
