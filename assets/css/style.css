@@ -120,8 +120,9 @@
   }  
 
   /* =========== card/sidebar/panel/ ================ */
- .containerTwo {
+ .sidebar {
   width: 220px;
+  display: inline-block;
   /* margin: 0;  */
   
 
@@ -153,8 +154,8 @@ h2 {
   margin: 10px 0 0 10px; 
 }
 
-.containerTwo {
-padding: 10px 10px 10px 20px;
+.sidebar {
+padding: 10px 20px 10px 20px;
 margin: 130px 0 0 30px;
 }
 
