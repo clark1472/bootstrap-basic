@@ -211,13 +211,8 @@ footer {
 @media (min-width: 768px) { 
  
   .navbar-brand {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: white;
-    font-size: 2.0em;
     padding-left: 10px;
-    float: none;
-    }
+  }
 
   .navbar-nav { 
     margin-left: auto;
@@ -226,21 +221,16 @@ footer {
   .nav-link {
     margin: 0 0 0 15px;
     padding: 0 0 0 15px;
-    border-left: 1px solid grey;
+    border-left: 1px solid lightgrey;
   }
 
   /* adjust all three pages */
   #aboutContainer, #portContainer, #contactContainer {
-    margin: 20px;
-    width: 100%;
     max-width: 700px;
   }
   /* image adjustments */
   #about-image {
-    float: left;
-    width: 50%;
-    height: auto;
-    margin-right: 25px;
+    width: 100%;
     clear: both;
   }  
 
@@ -252,14 +242,10 @@ footer {
   .project {
     max-width: 300px;
   }
-  
-  .project:nth-child(even) {
-    margin-right: 40px;
-  }
 }
 
 @media (min-width: 992px) { 
   .navbar {  
   max-width: 992px;
   }  
-}
+} 
