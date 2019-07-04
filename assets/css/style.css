@@ -42,47 +42,60 @@
   /* ======== Navbar header all three pages ======== */
 
 .navbar {
-    border-bottom: 2px solid grey;
+    /* border-bottom: 2px solid grey;
     width: 100%;
-    /* weard one trying to remember: 0 top, 0 left and right, 30px bottom */
     margin: 0;
-    /* 0 30px; */
     padding: 0;
-    /* z-index must be used to keep on top of content scrolling*/
-    /* z-index: 99; */
+    
     color: white;
-    background: white;
-   
+    background: white;   */
+    background: #4aaaa5;
+    /* text-align: center;	 */
   }
 
-  #myName {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    width: 577px;
-    height: 90px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    line-height: 80px;
-    background: #4aaaa5;
-    margin-left: 0;
-    /* margin-right: 10px; */
-    /* float: left; */
-   }
+ .navbar-custom {
+    background-color: #4aaaa5;
+    
+}
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(250, 249, 250);
+}
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 249, 250, 1.0)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 
-   .nav-link { 
+  .navbar-brand {
+    /* display: block; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-size: 50%; */
+    /* width: 577px; */
+    /* height: 90px; */
+    font-weight: bold;
+    /* text-align: center; */
+    /* color: white; */
+    /* line-height: 1; */
+    /* background: #4aaaa5; */
+    /* margin: 0; */
+    color: white;
+    font-size: 2.0em;
+    text-align: center;	
+    padding-left: 125px;
+    float: none;
+    }
+
+   /* .nav-link { 
     margin: 0 15px;
     background: white;
     color: grey;
-   }
+   } */
   
-   .nav-item { 
+   /* .nav-item { 
     display: inline-block;
-  }
+  } */
 
-   .threeLinks { 
-    margin-left: 150px;
-   }
+   /* .navbar-nav { 
+    margin-left: auto;
+   } */
    
    /* wow so much power is child element */
   /* #contact {
@@ -221,7 +234,6 @@ footer {
   margin: 0;
   font-weight: bold; 
 } 
-/* ================NEED TO REMOVE FLOATS FROM BOOTSTRAP============= I HAVE 7 FLOATS =========================== */
 
  /* ============= contact specifics ================== */
 
@@ -235,6 +247,28 @@ footer {
   }
 
 /* ======= @ media breakpoints =========================  */
+
+/*medium devices tables 
+@media (min-width: 768px) { 
+ 
+  #myName {
+    width: 300px;
+    float: left;
+  }
+
+  #threeLinks {
+    margin: 0;
+    text-align: left;
+    margin-top: 25px;
+   }
+
+  .nav-link {
+  margin: 0 0 0 15px;
+  padding: 0 0 0 15px;
+  border-left: 1px solid grey;
+  }
+
+} */
 
 /*
  @media (min-width: 560px) {  
@@ -259,14 +293,7 @@ footer {
     border-right: 1px solid grey;   
  }  
 
- 
- .mainSection {
-   width: 540px;
-    padding-top: 140px;
-    need background-color to test things
-    background-color: red;  
- }
-
+  
  .container {
   margin: 20px 10px;
   padding-top: 140px;
