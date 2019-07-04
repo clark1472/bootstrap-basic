@@ -42,15 +42,7 @@
   /* ======== Navbar header all three pages ======== */
 
 .navbar {
-    /* border-bottom: 2px solid grey;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    
-    color: white;
-    background: white;   */
-    background: #4aaaa5;
-    /* text-align: center;	 */
+   background: #4aaaa5;
   }
 
  .navbar-custom {
@@ -65,17 +57,8 @@
   }
 
   .navbar-brand {
-    /* display: block; */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* font-size: 50%; */
-    /* width: 577px; */
-    /* height: 90px; */
     font-weight: bold;
-    /* text-align: center; */
-    /* color: white; */
-    /* line-height: 1; */
-    /* background: #4aaaa5; */
-    /* margin: 0; */
     color: white;
     font-size: 2.0em;
     text-align: center;	
@@ -83,28 +66,10 @@
     float: none;
     }
 
-   /* .nav-link { 
-    margin: 0 15px;
-    background: white;
-    color: grey;
-   } */
-  
-   /* .nav-item { 
-    display: inline-block;
-  } */
-
-   /* .navbar-nav { 
-    margin-left: auto;
-   } */
-   
-   /* wow so much power is child element */
-  /* #contact {
-    padding-right: 15px;
-  } */
-
-  
-
-
+   .nav-link { 
+     font-weight: 900;
+    }
+     
   /* ============== About Me specifics =============== */
 
  
@@ -248,27 +213,30 @@ footer {
 
 /* ======= @ media breakpoints =========================  */
 
-/*medium devices tables 
+/* medium devices tables  */
 @media (min-width: 768px) { 
  
-  #myName {
-    width: 300px;
-    float: left;
-  }
+  .navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    font-size: 2.0em;
+    padding-left: 10px;
+    float: none;
+    }
 
-  #threeLinks {
-    margin: 0;
-    text-align: left;
-    margin-top: 25px;
-   }
+    .navbar-nav { 
+    margin-left: auto;
+    }
 
-  .nav-link {
-  margin: 0 0 0 15px;
-  padding: 0 0 0 15px;
-  border-left: 1px solid grey;
-  }
+  
+    .nav-link {
+    margin: 0 0 0 15px;
+    padding: 0 0 0 15px;
+    border-left: 1px solid grey;
+    }
 
-} */
+}
 
 /*
  @media (min-width: 560px) {  
