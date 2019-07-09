@@ -41,44 +41,63 @@ h2, h3 {
 }
 
   /* ======== Navbar header all three pages ======== */
+  .column {
+    float: left;
+  }
 
-.header {
-  background: #4aaaa5;
+.topbar {
+  background-color: white;
   height: 90px;
-  text-align: center;
-  padding-top: 20px;
   margin: 0;
+  position: relative;
 }
 
 .nav-link {
-  background-color: white;
-  color: grey;
   text-decoration: none;
-  font-size: 30px;
-  padding: 0 20px;
 }
 
 .navbar-brand {
+  background-color: #4aaaa5;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   color: white;
-  font-size: 2.0em;
-  padding: 20px 0 20px 0;
+  font-size: 32px;
   text-decoration: none;
-}
-
-#threeLinks { 
-  display: inline-block;
-  background-color: white;
+  float: left;
   text-align: center;
-  padding: 10px 80px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
+  margin: 0 20px 0 20px;
+  padding: 27px 10px;
+  height: 90px;
 }
 
+.one {
+  width: 43%;
+}
+.two {
+  color: white;
+width: 2%;
+}
+.three {
+  width: 18%;
+}
+.four {
+  width: 18%;
+}
+.five {
+  width: 18%;
+}
+/* .column three, .column four, .column five  */
+.three, .four, .five  {
+  background-color: white;
+  color: grey;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  padding: 25px 15px 15px 15px;
+  margin: 0 0 40px 0;
+  display: inline-block;
+}
 
-     
   /* ============== About Me specifics =============== */
 
 #aboutContainer  {
@@ -200,46 +219,60 @@ footer {
   }
 
 /* ======= @ media breakpoints =========================  */
-/* 
-medium devices tables 
-@media (min-width: 768px) { 
- 
-  .navbar-brand {
-    padding-left: 10px;
-  }
+/*  large devices pc */
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+  #aboutContainer {
+    background-color: yellow; 
+ }
+}
 
-  .navbar-nav { 
-    margin-left: auto;
-  }
-
-  .nav-link {
-    margin: 0 0 0 15px;
-    padding: 0 0 0 15px;
-    border-left: 1px solid lightgrey;
-  }
-
-  adjust all three pages
-  #aboutContainer, #portContainer, #contactContainer {
-    max-width: 700px;
-  }
-  image adjustments
-  #about-image {
-    width: 100%;
-    clear: both;
-  }  
-
-  for all three connect icons
-  .card {
-    max-width: 700px;
-  }
-  for portfolio adjustments
-  .project {
-    max-width: 300px;
+/* ========================================== */
+/* medium devices tables  */
+@media screen and (min-width: 768px) and (max-width: 980px)   {
+  #aboutContainer {
+    background-color: red;
   }
 }
 
-@media (min-width: 992px) { 
-  .navbar {  
-  max-width: 992px;
-  }  
-}  */
+/* ======================================== */
+/* small devices phones */
+@media screen  and (max-width: 767.98px) {
+   #aboutContainer {
+    background-color: blue;
+    margin-top: 80px;
+  }
+  .navbar-brand {
+    margin: 0 auto;
+    float: center;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    font-size: 32px;      
+    text-decoration: none;
+    text-align:center;
+    display:block;
+    width: 100%;
+  /*	padding: 27px 10px;*/
+    height: 90px;
+    }
+  
+    .one {
+    background-color: #4aaaa5;
+    width: 100%;
+    }
+   .two {
+     width: 1%;
+    }
+   .three {
+      width: 33%;
+    }
+   .four {
+      width: 33%;
+    }
+   .five {
+      width: 33%;
+    }
+
+}
+  
