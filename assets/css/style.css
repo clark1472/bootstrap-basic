@@ -17,10 +17,6 @@ p {
   margin: 0;
   font-size: 25px;
 }
-/* 
-p:last-child { 
-  margin-bottom: 20px;
-} */
 
 h1, h2, h3{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -106,13 +102,11 @@ width: 2%;
   width: 97%;
   border: 1px solid lightgrey;
   background-color: white;
-  /* height: 900px; */
 }
 
   /* for about me photo */
 #about-image {
   width: 100%;
-  /* height: auto; */
   clear: both;
 }  
 
@@ -121,18 +115,18 @@ width: 2%;
   width: 50%;
   float: left;
 }
-/* .aboutOne {
+.aboutOne {
   width: 50%;
-  background-color: red;
 }
 .aboutTwo {
   width: 50%;
-  background-color: red;
+}
+.aboutTwoB {
+  width: 100%;
 }
 .aboutThree {
   width: 100%;
-  background-color: red;
-} */
+} 
 
   /* =========== card/connect/panel/ ================ */
 
@@ -239,18 +233,34 @@ footer {
 
 /* ======= @ media breakpoints =========================  */
 /*  large devices pc */
-@media screen and (min-width: 980px) and (max-width: 1200px) {
+@media screen and (min-width: 980px) and (max-width: 1800px) {
   #aboutContainer {
-    background-color: yellow;
-    
- }
+    /* background-color: yellow; */
+    width: 70%;
+  }
+ 
+  p {
+    width: 100%;
+  }
+  .aboutOne {
+    width: 35%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+  }
+  .aboutTwo {
+    width: 63%;
+  }
+  .aboutTwoB, .aboutThree {
+    width: 100%;
+  }
+  
 }
 
 /* ========================================== */
 /* medium devices tables  */
 @media screen and (min-width: 768px) and (max-width: 979.98px)   {
   #aboutContainer {
-    background-color: red;
+    /* background-color: red; */
     
   }
   #about-image {
@@ -260,19 +270,22 @@ footer {
   p {
     width: 98%;
   }
-  /* .aboutOne {
-    width: 48%;
+  .aboutOne, .aboutTwo {
+    width: 50%;
+   }
+  
+  .aboutTwoB, .aboutThree{
+    width: 100%;
   }
-  .aboutTwo {
-    width: 48%;
-  } */
+  
+
 }
 
 /* ======================================== */
 /* small devices phones */
 @media screen  and (max-width: 767.98px) {
    #aboutContainer {
-    background-color: blue;
+    /* background-color: blue; */
     margin-top: 80px;
   }
 
@@ -288,7 +301,6 @@ footer {
     text-align:center;
     display:block;
     width: 100%;
-  /*	padding: 27px 10px;*/
     height: 90px;
     }
     
@@ -301,15 +313,7 @@ footer {
      width: 1%;
     }
 
-   .three {
-      width: 33%;
-    }
-
-   .four {
-      width: 33%;
-    }
-
-   .five {
+   .three, .four, .five {
       width: 33%;
     }
 
@@ -317,11 +321,7 @@ footer {
       width: 100%;
     }
 
-    .aboutOne {
-      width: 100%;
-    }
-
-    .aboutTwo {
+    .aboutOne, .aboutTwo, .aboutTwoB, .aboutThree {
       width: 100%;
     }
 }
