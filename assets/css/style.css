@@ -14,13 +14,13 @@ body {
 
 
 p {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 25px;
 }
-
+/* 
 p:last-child { 
   margin-bottom: 20px;
-}
+} */
 
 h1, h2, h3{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -106,14 +106,33 @@ width: 2%;
   width: 97%;
   border: 1px solid lightgrey;
   background-color: white;
+  /* height: 900px; */
 }
 
   /* for about me photo */
 #about-image {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   clear: both;
 }  
+
+.col-md-6 {
+  margin: 0;
+  width: 50%;
+  float: left;
+}
+/* .aboutOne {
+  width: 50%;
+  background-color: red;
+}
+.aboutTwo {
+  width: 50%;
+  background-color: red;
+}
+.aboutThree {
+  width: 100%;
+  background-color: red;
+} */
 
   /* =========== card/connect/panel/ ================ */
 
@@ -222,16 +241,31 @@ footer {
 /*  large devices pc */
 @media screen and (min-width: 980px) and (max-width: 1200px) {
   #aboutContainer {
-    background-color: yellow; 
+    background-color: yellow;
+    
  }
 }
 
 /* ========================================== */
 /* medium devices tables  */
-@media screen and (min-width: 768px) and (max-width: 980px)   {
+@media screen and (min-width: 768px) and (max-width: 979.98px)   {
   #aboutContainer {
     background-color: red;
+    
   }
+  #about-image {
+    width: 95%;
+    margin-right: 15px;
+  }
+  p {
+    width: 98%;
+  }
+  /* .aboutOne {
+    width: 48%;
+  }
+  .aboutTwo {
+    width: 48%;
+  } */
 }
 
 /* ======================================== */
@@ -241,6 +275,7 @@ footer {
     background-color: blue;
     margin-top: 80px;
   }
+
   .navbar-brand {
     margin: 0 auto;
     float: center;
@@ -256,23 +291,38 @@ footer {
   /*	padding: 27px 10px;*/
     height: 90px;
     }
-  
+    
     .one {
     background-color: #4aaaa5;
     width: 100%;
     }
+
    .two {
      width: 1%;
     }
+
    .three {
       width: 33%;
     }
+
    .four {
       width: 33%;
     }
+
    .five {
       width: 33%;
     }
 
+    #about-image {
+      width: 100%;
+    }
+
+    .aboutOne {
+      width: 100%;
+    }
+
+    .aboutTwo {
+      width: 100%;
+    }
 }
   
