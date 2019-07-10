@@ -85,7 +85,7 @@ h2, h3 {
   text-align: center;
   font-size: 30px;
   padding: 25px 15px 15px 15px;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
   display: inline-block;
 }
 
@@ -123,19 +123,6 @@ h2, h3 {
   width: 100%;
 } 
 
-  /* =========== card/connect/panel/ ================ */
-/* 
-h3, .card{
-  border-bottom: 1px solid grey;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  line-height: 22px;
-}
-
-h2 {
-  padding: 10px 10px 10px 0;
-  margin: 0;  
-} */
 /* ==============footer============== */
 footer {
   font-size: 25px;
@@ -230,6 +217,7 @@ footer {
 @media screen and (min-width: 980px) and (max-width: 1800px) {
   #aboutContainer {
     width: 70%;
+    margin-bottom: 400px;
   }
  
   p {
@@ -250,8 +238,7 @@ footer {
 /* media large */
   #portContainer {
     width: 70%;
-    /* background-color: white; */
-    background-color: yellow;
+    background-color: white;
   }
     
   .portOne, .portTwo, .portThree, .portFour, .portFive {
@@ -271,12 +258,20 @@ footer {
   .portOne h3, .portTwo h3, .portThree h3, .portFour h3, .portFive h3{
     width: 92%;
   } 
+
+  #contactContainer {
+  width: 70%;
+  margin-bottom: 300px;
+  }
 }
 
 /* ========================================== */
 /* medium devices tables  */
 @media screen and (min-width: 768px) and (max-width: 979.98px)   {
-  
+  #aboutContainer {
+    margin-bottom: 400px;
+  }
+
   #about-image {
     width: 95%;
     margin-right: 15px;
@@ -295,8 +290,7 @@ footer {
   /* mdeia portfolio */
   #portContainer {
     width: 97%;
-    /* background-color: white; */
-    background-color: red;
+    background-color: white;
   }
     
   .portOne, .portTwo, .portThree, .portFour, .portFive {
@@ -317,6 +311,9 @@ footer {
     width: 92%;
   } 
   
+  #contactContainer {
+   margin-bottom: 300px;
+  }
 
 }
 
@@ -325,6 +322,7 @@ footer {
 @media screen  and (max-width: 767.98px) {
    #aboutContainer {
     margin-top: 80px;
+    margin-bottom: 200px;
   }
 
   .navbar-brand {
@@ -364,7 +362,14 @@ footer {
     }
 
     #portContainer {
-      background-color: blue;
+      background-color: white;
     }
+
+    /* media contact */
+    #contactContainer {
+      width: 97%;
+      margin-bottom: 300px;
+    }
+
 }
   
